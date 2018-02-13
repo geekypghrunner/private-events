@@ -1,0 +1,11 @@
+<h1>Sessions#new</h1>
+<p>Find me in app/views/sessions/new.html.erb</p>
+<%= form_for :session do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :id %>
+    <%= f.text_field :id %>
+    <%= f.submit %>
+<% end %>
+
+<%= link_to "Create a new account", signup_path %>
