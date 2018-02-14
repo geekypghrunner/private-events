@@ -1,2 +1,6 @@
 This event was created by:
 <%= User.find(@event.creator_id).name %>
+The following people are attending:
+<% @event.attendees.each do |e| %>
+<%= e.name %>
+<% end %>
